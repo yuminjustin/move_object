@@ -33,6 +33,11 @@ const MRContainer = (props: Prop) => {
     type: string,
     item: mrObject2
   ) => {
+    if (
+      (item.width == 1 && pos.left < 0) ||
+      (item.height == 1 && pos.top < 0)
+    )
+      return;
     if (type == "dot") {
       if (posName == "top") {
         item.width -= pos.left;
