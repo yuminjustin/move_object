@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../assets/css/m_r.scss";
 import MoveResize from "./item";
 import OriginBox from "./item2";
