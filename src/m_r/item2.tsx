@@ -1,4 +1,4 @@
-import { ReactNode, useState, useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { getImageSize } from "./utils";
 interface Prop {
   fsize: itemSize;
