@@ -1,4 +1,4 @@
-import { ReactNode, useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import MRHelper from "./helper";
 interface Prop {
   fsize: itemSize;
@@ -35,10 +35,6 @@ const MoveResize = (props: Prop) => {
     setIsDrag(!1);
     props.releaseDrag(props.source);
   };
-  // const mouseUp = () => {
-  //   setIsDrag(!1);
-  //   props.releaseDrag(props.source);
-  // };
   const setDrag = () => {
     setIsMove(!1);
     props.setDrag(props.source);
