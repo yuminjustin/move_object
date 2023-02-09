@@ -16,8 +16,12 @@ export const getImageSize = (url: string | undefined): Promise<itemSize> => {
 export const listMaker = (list: Array<mrObject>): Array<mrObject2> => {
   return list.map((item: mrObject, key: number) => {
     return Object.assign(
-      { index: key, zIndex: key + 1, left: 0, top: 0, width: 0, height: 0 },
+      { index: key, zIndex: key + 1, left: 0, top: 0, width: 0, height: 0, isDrag: false },
       item
     );
   });
+};
+
+export const getNearObject = (tar:mrObject,list: Array<mrObject>,box:any): any => {
+  
 };
