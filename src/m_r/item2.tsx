@@ -43,4 +43,4 @@ const OriginBox = (props: Prop) => {
   );
 };
 
-export default OriginBox;
+export default OriginBox
