@@ -19,11 +19,13 @@ const MRContainer = (props: Prop) => {
   };
   const setDrag = (item: mrObject2) => {
     list[item.index].zIndex = 9999;
+    list[item.index].isDrag = true;
     let temp = list.slice();
     setList(temp);
   };
   const releaseDrag = (item: mrObject2) => {
     list[item.index].zIndex = list[item.index].index + 1;
+    list[item.index].isDrag = false;
     let temp = list.slice();
     setList(temp);
   };
