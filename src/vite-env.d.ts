@@ -6,6 +6,7 @@ interface mrObject {
 interface mrObject2 extends mrObject {
   index: number;
   zIndex: number;
+  isDrag:boolean;
   left: number;
   top: number;
   width: number;
